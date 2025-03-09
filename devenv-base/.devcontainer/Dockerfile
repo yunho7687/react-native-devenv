@@ -1,6 +1,6 @@
 FROM mcr.microsoft.com/devcontainers/base:bullseye
 
-ARG USERNAME=cits5526
+ARG USERNAME=vscode
 
 # Used to persist bash history as per https://code.visualstudio.com/remote/advancedcontainers/persist-bash-history
 # Based from https://github.com/jamiekt/devcontainer1/blob/2023-05/.devcontainer/Dockerfile
