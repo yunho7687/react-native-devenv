@@ -20,7 +20,7 @@ COPY ./utils /opt/utils
 RUN cat "/opt/utils/.zshrc" >> "/home/${USERNAME}/.zshrc"
 
 # Add a display script for every terminal run
-RUN echo "\n/opt/utils/startup_display.sh" >> "/home/${USERNAME}/.zshrc"
+RUN echo "/opt/utils/startup_display.sh" >> "/home/${USERNAME}/.zshrc"
 
 # Make the display script executable
 RUN chmod +x /opt/utils/startup_display.sh
