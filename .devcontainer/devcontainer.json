@@ -1,17 +1,17 @@
 // For format details, see https://aka.ms/devcontainer.json. For config options, see the
 // README at: https://github.com/devcontainers/templates/tree/main/src/debian
 {
-	"name": "react native devcontainer",
-	"build": {
-		"dockerfile": "Dockerfile",
-		"context": ".."
-	},
+	"name": "React Native Devenv",
 	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
-	"image": "mcr.microsoft.com/devcontainers/base:bullseye",
-	"features": {
-		"ghcr.io/devcontainers/features/node:1": {},
-		"ghcr.io/devcontainers-extra/features/typescript:2": {}
-	}
+	"image": "ghcr.io/yunho7687/react-native-devenv-base:main",
+	"forwardPorts": [3004, 8005, 5437],
+	"postCreateCommand": "figlet 'CITS5206' && echo 'Welcome to CITS5206 Devenv!'"
+
+	// Use 'postCreateCommand' to run commands after the container is created.
+	// Note: Useful for when they open it and want everything to just start
+	// "postCreateCommand": "./.devcontainer/setup.sh",
+	// "postStartCommand": "./.devcontainer/post_start.sh"
+
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	// "features": {},
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
