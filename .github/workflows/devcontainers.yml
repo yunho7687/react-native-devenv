@@ -9,7 +9,7 @@ on:
 
 env:
   REGISTRY: ghcr.io
-  IMAGE_NAME: yunho7687/react-native-devenv
+  IMAGE_NAME: yunho7687/react-native-devenv2
 
 jobs:
   # Build and push Docker image with Buildx (don't push on PR)
