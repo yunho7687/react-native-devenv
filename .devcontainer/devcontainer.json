@@ -3,7 +3,7 @@
 {
 	"name": "React Native Devenv",
 	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
-	"image": "ghcr.io/yunho7687/react-native-devenv-base:main",
+	"image": "ghcr.io/yunho7687/react-native-devenv:latest",
 	"forwardPorts": [3004, 8005, 5437],
 	"postCreateCommand": "figlet 'CITS5206' && echo 'Welcome to CITS5206 Devenv!'"
 
